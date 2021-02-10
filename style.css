@@ -29,13 +29,6 @@ nav a:hover, a:active{
 }
 
 
-}
-   .nav .current {
-    background-color: red;
-}
-
-
-
 body{
     font-family: 'Open Sans', sans-serif;
 }
