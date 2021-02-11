@@ -93,3 +93,13 @@ footer{
     background-color: #333333;
     color: #ffffff;
 }
+
+#map {
+    height: 30%;
+    position: relative;
+    justify-content: space-around;
+    width: 50%;
+
+
+
+}

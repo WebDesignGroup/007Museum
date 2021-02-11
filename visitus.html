@@ -1,41 +1,43 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="description" content="HTML5, CSS3">
-	<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="description" content="HTML5, CSS3">
+    <link rel="stylesheet" href="style.css">
 
 
 </head>
 
 <header>
-	<nav>
-		<div class="logo">
-			<h4> James Bond <br>
-				Exhibition
-			</h4>
-		</div>
-		<ul class="nav-links">
-			<li><a href="homepage.html">Home</a></li>
-			<li><a href="gallery.html">Gallery</a></li>
-			<li><a href="videos.html">Videos</a></li>
-			<li><a href="store.html">Store</a></li>
-			<li><a href="visitus.html">Visit</a></li>
-		</ul>
-		<div class="animation start-home"> 
+    <nav>
+        <div class="logo">
+            <h4> James Bond <br>
+                Exhibition
+            </h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="visitus.html">Visit</a></li>
+        </ul>
+        <div class="animation start-home">
 
 
-		</div>
-		<div class="burger">
-			<div class="line1"></div>
-			<div class="line2"></div>
-			<div class="line3"></div>
-		</div>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
 
-	</nav>
+    </nav>
 </header>
 
-<body>	
+<body>
+
+
     <section class="openinghours">
 
         <div class="header">
@@ -45,100 +47,131 @@
         </div>
 
 
-    
 
-    <table class="openinghourstable">   
 
-        <tr id="Monday" title="Open Monday from 11AM - 3PM"> 
+        <table class="openinghourstable">
 
-            <td> Monday </td>
+            <tr id="Monday" title="Open Monday from 11AM - 3PM">
 
-            <td>11:00</td>
+                <td> Monday </td>
 
-            <td>-</td>
+                <td>11:00</td>
 
-            <td>15:00</td>
+                <td>-</td>
 
-        </tr>
+                <td>15:00</td>
 
-        <tr id="Tuesday" title="Open Tuesday from 11AM TO 3PM">
+            </tr>
 
-            <td>Tuesday</td>
+            <tr id="Tuesday" title="Open Tuesday from 11AM TO 3PM">
 
-            <td>11:00</td>
+                <td>Tuesday</td>
 
-            <td>-</td>
+                <td>11:00</td>
 
-            <td>15:00</td>
+                <td>-</td>
 
-        </tr>
+                <td>15:00</td>
 
-        <tr id="Wednesday" title="Open Wednesday from 11AM TO 3PM">
+            </tr>
 
-            <td>Wednesday</td>
+            <tr id="Wednesday" title="Open Wednesday from 11AM TO 3PM">
 
-            <td>11:00</td>
+                <td>Wednesday</td>
 
-            <td>-</td>
+                <td>11:00</td>
 
-            <td>15:00</td>
+                <td>-</td>
 
-        </tr>
+                <td>15:00</td>
 
-        <tr id="Thursday" title="Open Thursday from 11AM TO 3PM">
+            </tr>
 
-            <td>Thursday</td>
+            <tr id="Thursday" title="Open Thursday from 11AM TO 3PM">
 
-            <td>11:00</td>
+                <td>Thursday</td>
 
-            <td>-</td>
+                <td>11:00</td>
 
-            <td>15:00</td>
+                <td>-</td>
 
-        </tr>
+                <td>15:00</td>
 
-        <tr id="Friday" title="Open Friday from 11AM TO 3PM"> 
+            </tr>
 
-            <td>Friday</td>
+            <tr id="Friday" title="Open Friday from 11AM TO 3PM">
 
-            <td>11:00</td>
+                <td>Friday</td>
 
-            <td>-</td>
+                <td>11:00</td>
 
-            <td>15:00</td>
+                <td>-</td>
 
-        </tr>
+                <td>15:00</td>
 
-        <tr id="Saturday" title="Open Saturday from 10AM TO 2PM">
+            </tr>
 
-            <td>Saturday</td>
+            <tr id="Saturday" title="Open Saturday from 10AM TO 2PM">
 
-            <td>10:00</td>
+                <td>Saturday</td>
 
-            <td>-</td>
+                <td>10:00</td>
 
-            <td>14:00</td>
+                <td>-</td>
 
-        </tr>
+                <td>14:00</td>
 
-        <tr id="Sunday" title="Closed on Sunday">
+            </tr>
 
-            <td>Sunday</td>
+            <tr id="Sunday" title="Closed on Sunday">
 
-            <td>Closed</td>
+                <td>Sunday</td>
 
-        </tr>
+                <td>Closed</td>
 
-    </table>
+            </tr>
 
-</section>
-	<!--Include other homepage content and images-->
+        </table>
+
+    </section>
+
+
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var options = {
+                center: { lat: 56.740, lng: 15.892 },
+                zoom: 15,
+            }
+
+            map = new google.maps.Map(document.getElementById("map"), options);
+
+            const image =
+                "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+            var marker = new google.maps.Marker({
+                position: { lat: 56.740, lng: 15.892 },
+                map: map,
+                icon: image
+            });
+
+        }
+
+
+
+
+    </script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtPnzwj5Cff1WvC6k7AKMJFyGnhMDi4Q4&callback=initMap"></script>
+
+    <!--Include other homepage content and images-->
 </body>
 
 <footer>
-	<div id="conatct">
-		<strong>Email</strong>: 007museum@telia.com | <strong>Phone</strong>: 0481-129 60 | <strong>Address</strong>: Emmabodavägen 20, 382 45 Nybro, Sweden</p>
-	</div>
+    <div id="conatct">
+        <strong>Email</strong>: 007museum@telia.com | <strong>Phone</strong>: 0481-129 60 | <strong>Address</strong>:
+        Emmabodavägen 20, 382 45 Nybro, Sweden</p>
+    </div>
 </footer>
 
 </html>
