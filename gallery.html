@@ -9,85 +9,45 @@
 		* {
   			box-sizing: border-box;
 		}
-		div.gallery {
-		  margin: 5px;
-		  border: 2px solid #ccc;
-		  float: left;
-		  width: 350px;
-		}
-		div.description {
-  			background-color: #f1f1f1;
- 			 padding: 20px;
- 			 font-family: Arial, Helvetica, sans-serif;
-		}
-		
-		div.gallery:hover {
-		  border: 1px solid rgb(141, 70, 70);
-		}
-		
-		div.gallery img {
-		  width: 325px;
-		  height: 200px;
-		}
-		
-		div.desc {
-		  padding: 15px;
-		  text-align: center;
-		
-		}
-		.main {
- 		 	max-width: 1000px;
-  			margin: auto;
-		}
 		.row {
-  			margin: 8px -16px;
-		}
-
-		.row,
-		.row > .column {
-  			padding: 8px;
+  			display: flex;
+  			flex-wrap: wrap;
+  			padding: 0 4px;
 		}
 		.column {
-  			float: left;
-  			width: 25%;
+  			flex: 25%;
+  			max-width: 25%;
+  			padding: 0 4px;
 		}
-		.row:after {
-  			content: "";
-  			display: table;
-  			clear: both;
+		.column img {
+  			margin-top: 8px;
+  			vertical-align: middle;
 		}
-		.gallery {
-  			background-color: white;
-  			padding: 10px;
-		}
-		
-		@media screen and (max-width: 900px) {
+		@media (max-width: 800px) {
   			.column {
-   				width: 50%;
+    		flex: 50%;
+   		 	max-width: 50%;
   			}
 		}
-		@media screen and (max-width: 600px) {
+		@media (max-width: 600px) {
   			.column {
-   				 width: 100%;
+    		flex: 100%;
+    		max-width: 100%;
   			}
 		}
-
-
 	</style>
-
-
 </head>
-<div class="gallerypage">
-	<header>
-		<div class="logo">
-			<h1> James Bond <br>
-				Exhibition
-			</h1>
-		</div>
-	</header>
 
-	<body>
-		<nav>
+<header>
+	<div class="logo">
+		<h1> James Bond <br>
+			Exhibition
+		</h1>
+	</div>
+</header>
+
+<body>
+	<nav>
 		<ul class="nav-links">
 			<li><a href="homepage.html">| Home |</a></li>
 			<li><a href="gallery.html">| Gallery |</a></li>
@@ -96,82 +56,43 @@
 			<li><a href="visitus.html">| Visit |</a></li>
 		</ul>
 		<div class="animation start-home">
-		</nav>
-		<!-- ROW 1 -->
-		<div class ="row">
-			<div class="column">
-				<div class="gallery">
-					<a target="_blank" href="http://www.007museum.com/bond_warwick_hover.jpg">
-					<img src="http://www.007museum.com/bond_warwick_hover.jpg" alt="Hovercraft Osprey" >
-					</a>
-					<div class="description">Hovercraft Osprey Original - Die Another Day</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="gallery">
-					<a target="_blank" href="http://www.007museum.com/triumph_bond_edition_007_nttd.jpg">
-					<img src="http://www.007museum.com/triumph_bond_edition_007_nttd.jpg" alt="Triumph Scrambler Motorbike" >
-					</a>
-					<div class="description">Triumph Scrambler 1200 from No Time To Die</div>
-				</div>
-			</div>	
-			<div class="column">
-				<div class="gallery">
-					<a target="_blank_" href="https://pbs.twimg.com/media/Do7geXwXsAImDdC.jpg">
-					<img src="https://pbs.twimg.com/media/Do7geXwXsAImDdC.jpg" alt="James Bond 007 Museum" >
-					</a>
-					<div class="description">James Bond 007 Museum in Nybro Sweden</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="gallery">
-					<a target="_blank_" href="https://www.routesnorth.com/wp-content/uploads/2015/04/bond-museum-nybro.jpg">
-					<img src="https://www.routesnorth.com/wp-content/uploads/2015/04/bond-museum-nybro.jpg" alt="Inside the James Bond 007 Museum" >
-					</a>
-					<div class="description">Inside the James Bond 007 Museum, Nybro Sweden </div>
-				</div>
-			</div>
 		</div>
-		<!-- END ROW 1 -->
-		<!-- START ROW 2 -->
-		<div class ="row">
-			<div class="column">
-				<div class="gallery">
-					<a target="_blank_" href="http://www.007museum.com/tailboat_golden_gun_007.jpg">
-					<img src="http://www.007museum.com/tailboat_golden_gun_007.jpg" alt="Tailboat from the Man with the Golden Gun" >
-					</a>
-					<div class="description">Tailboat from the Man with the Golden Gun</div>
-				</div>
-			</div>	
-			<div class="column">
-				<div class="gallery">
-					<a target="_blank_" href="http://www.007museum.com/natalya_bikini_goldeneye.jpg">
-					<img src="http://www.007museum.com/natalya_bikini_goldeneye.jpg" alt="Izabella Scorupcos bikini (Golden Eye)" >
-					</a>
-					<div class="description">Izabella Scorupcos bikini from the film Golden Eye</div>
-				</div>
-			</div>	
-			<div class="column">
-				<div class="gallery">
-					<a target="_blank_" href="http://www.007museum.com/ski-doo-james-bond007.jpg">
-					<img src="http://www.007museum.com/ski-doo-james-bond007.jpg" alt="Snowmobile from Die Another Day" >
-					</a>
-					<div class="description">Ski-Doo MX Z (E) 600 HO (R) from Die Another Day</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="gallery">
-					<a target="_blank_" href="http://www.007museum.com/bond_cessna172.jpg">
-					<img src="http://www.007museum.com/bond_cessna172.jpg" alt="Snowmobile from Die Another Day" >
-					</a>
-					<div class="description">SE-LGK Cessna plane used in Bond movie "Goldeneye" and "Licence To Kill"</div>
-				</div>
-			</div>
+	</nav>
+		
+	<div class ="row">
+		<div class="column">
+			<img src="http://www.007museum.com/bond_warwick_hover.jpg" style="width:100%" alt="Hovercraft Osprey" >
+			<img src="https://pbs.twimg.com/media/Do7geXwXsAImDdC.jpg" style="width:100%" alt="James Bond 007 Museum" >
+			<img src="https://www.routesnorth.com/wp-content/uploads/2015/04/bond-museum-nybro.jpg" style="width:100%" alt="Inside the James Bond 007 Museum" >
+			<img src="http://www.007museum.com/triumph_bond_edition_007_nttd.jpg" style="width:100%" alt="Triumph Scrambler Motorbike" >
 		</div>
-		<!-- END ROW 2 -->
+	
+		<div class="column">
+			<img src="http://www.007museum.com/tailboat_golden_gun_007.jpg" style="width:100%" alt="Tailboat from the Man with the Golden Gun" >
+			<img src="http://www.007museum.com/natalya_bikini_goldeneye.jpg" style="width:100%" alt="Izabella Scorupcos bikini (Golden Eye)" >
+			<img src="http://www.007museum.com/ski-doo-james-bond007.jpg" style="width:100%" alt="Snowmobile from Die Another Day" >
+			<img src="http://www.007museum.com/bond_cessna172.jpg" style="width:100%" alt="SE-LGK Cessna plane" >
+		</div>
+
+		<div class="column">
+			<img src="http://www.007museum.com/volpe_entre_bond.jpg" style="width:100%" alt="President James Bond Gunnar Schäfer visit The Hotel Cala Di Volpe">
+			<img src="http://www.007museum.com/britt_inger_bond_james1.jpg" style="width: 100%" alt="Kristina Wayborn and James Bond Gunnar Schäfer">
+			<img src="http://www.007museum.com/spectre_am_bond.jpg" style="width: 100%" alt="James Bond Gunnar Schäfer with the Aston Martin DB10 from Spectre">
+			<img src="http://www.007museum.com/bond_james_nybro.jpg" style="width: 100%" alt="James Bond Gunnar Schäfer">
+		</div>
+
+		<div class="column">
+			<img src="http://www.007museum.com/pinball_1980c.jpg" style="width:100%">
+			<img src="http://www.007museum.com/cinema_007museum.gif" style="width:100%">
+			<img src="http://www.007museum.com/007bathroom.gif" style="width:100%">
+			<img src="http://www.007museum.com/jasmine_spectre_james.jpg" style="width:100%">
+
+		</div>
+	</div>
+	
 
 	<!--Include other homepage content and images--> 
-</div>
+
 </body>
 <br>
 <footer>
