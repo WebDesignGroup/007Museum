@@ -4,94 +4,122 @@
 	<meta charset="utf-8">
 	<meta name="description" content="HTML5, CSS3">
 	<link rel="stylesheet" href="style.css">
+	<style>
+		.header {
+  			padding: 30px;
+  			text-align: center;
+  			background: white;
+		}
+		body {
+  			font-family: Arial;
+  			padding: 10px;
+  			background: #f1f1f1;
+		}
+		.leftcolumn {   
+  			float: left;
+  			width: 75%;
+		}
+		.rightcolumn {
+  			float: right;
+  			width: 25%;
+  			background-color: #f1f1f1;
+  			padding-left: 20px;
+		}
+		.card {
+  			background-color: white;
+  			padding: 20px;
+  			margin-top: 10px;
+		}
+		@media screen and (max-width: 800px) {
+  			.leftcolumn, .rightcolumn {   
+    		width: 100%;
+    		padding: 0;
+  			}
+		}
+		.image{
+  			background-color: rgba(228, 228, 228, 0.897);
+  			width: 100%;
+  			padding: 20px;
+		}
+		p {
+			font-size: 15px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	</style>
 
 
 </head>
 
 <header>
-	<nav>
-		<div class="logo">
-			<h4> James Bond <br>
-				Exhibition
-			</h4>
-		</div>
-		<ul class="nav-links">
-			<li><a href="homepage.html">Home</a></li>
-			<li><a href="gallery.html">Gallery</a></li>
-			<li><a href="videos.html">Videos</a></li>
-			<li><a href="store.html">Store</a></li>
-			<li><a href="visitus.html">Visit</a></li>
-
-		</ul>
-		<div class="animation start-home">
-
-
-		</div>
-		<div class="burger">
-			<div class="line1"></div>
-			<div class="line2"></div>
-			<div class="line3"></div>
-		</div>
-
-	</nav>
+	<div class="logo">
+		<h1> James Bond <br>
+			Exhibition
+		</h1>
+	</div>
 </header>
 
 <body>
-	<h2>About the Owner</h2>
-	<p>
-		One James Bond superfan has turned his passion for all-things-007 into a full-fledged tourist attraction. 
-		The James Bond Museum in the Swedish city of Nybro has everything to make any 007 fan swoon. 
-		From a Bond-themed pinball machine built in the 80s to roulette tables, James Bond Gunnar Schäfer 
-		(yes, that is the name of the founder of this museum) has amassed a collection of over 60,000 items.
-		Gunnar has also named his house Goldeneye (after the Jamaican estate that Bond author Ian Fleming once owned), 
-		and numbered it 007, despite actually living at number 10. 
-	</p>
-	
-	<div>
-		<a target="_blank" href="http://www.007museum.com/bond-james-mi6.jpg">
-		<img src="http://www.007museum.com/bond-james-mi6.jpg" alt="Owner of the 007 Museum" width="300" height="300">
-		</a>
-		<div class="description"><em>(The owner James Bond Gunnar Schäfer)</em></div>
+	<nav>
+	<ul class="nav-links">
+		<li><a href="homepage.html">| Home |</a></li>
+		<li><a href="gallery.html">| Gallery |</a></li>
+		<li><a href="videos.html">| Videos |</a></li>
+		<li><a href="store.html">| Store |</a></li>
+		<li><a href="visitus.html">| Visit |</a></li>
+
+	</ul>
+	<div class="animation start-home">
+
+
+	</div>
+</nav>
+	<div class="rightcolumn">
+		<div class="card">
+			<h2>About the Owner</h2>
+			<p>
+				One James Bond superfan has turned his passion for all-things-007 into a full-fledged tourist attraction. 
+				The James Bond Museum in the Swedish city of Nybro has everything to make any 007 fan swoon. James Bond Gunnar Schäfer 
+				(yes, that is the name of the founder of this museum) has amassed a collection of over 60,000 items. 
+			</p>
+			
+			<div class="image">
+				<a target="_blank" href="http://www.007museum.com/bond-james-mi6.jpg">
+				<img src="http://www.007museum.com/bond-james-mi6.jpg" alt="Owner of the 007 Museum" width="250" height="200">
+				</a>
+				<div class="description"><em>(The owner James Bond Gunnar Schäfer)</em></div>
+			</div>
+		</div>
+		<div class="card">
+			<h3>Follow Us</h3>
+			<p>Some text..</p>
+		  </div>
 	</div>
 	
 	<br> 
 	</br>
-	
-	<h2>Our Exhibitions</h2>
-	<p>
-		The 007 museum is devoted to celebrating the story of Ian Fleming’s James Bond 007. To bring the adventures of Bond to life,
-		our exhibits showcase a plethora of familiar memorabilia from across all 24 of the released movies. Our collection includes a stunning range of vehicles,
-		be it air, land or sea. You can experience flying like bond over Costa, in our new helicopter or how about checking out our garage where we have
-		an Aston Martin branded with custom JB 007 license plates and even the actual Cessna 172 used in three of the Bond films.
-	</p>
-		
-		
-	
-	<div>
-		<a target="_blank" href="http://www.007museum.com/007-Museum.jpg">
-		<img src="http://www.007museum.com/007-Museum.jpg" alt="Garage at the 007 Museum" width="250" height="250">
-		</a>
-		<div class="description"><em>(The garage at the 007 Museum)</em></div>
+	<div class="leftcolumn">
+		<div class="card">
+			<h2>Our Exhibitions</h2>
+			<p>
+				The 007 museum is devoted to celebrating the story of Ian Fleming’s James Bond 007. To bring the adventures of Bond to life,
+				our exhibits showcase a plethora of familiar memorabilia from across all 24 of the released movies. Our collection includes a stunning range of vehicles,
+				be it air, land or sea. You can experience flying like bond over Costa, in our new helicopter or how about checking out our garage where we have
+				an Aston Martin branded with custom JB 007 license plates and even the actual Cessna 172 used in three of the Bond films.
+			</p>
+			<br>
+			<p>
+				From spy training to props used in filming, we offer something for everyone. 
+				Experience all this and immerse yourself in the world of her majesty's special 
+				agent with a visit to our spectacular show rooms.
+			<p>
+				
+				
+			
+			
+		</div>
 	</div>
 
 	<br>
-	</br>
-
-	<p>
-		From spy training to props used in filming, we offer something for everyone. 
-		Experience all this and immerse yourself in the world of her majesty's special 
-		agent with a visit to our spectacular show rooms.
-	<p>
-		
-	<br>
-	</br>
-
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque corrupti provident alias rem nihil laboriosam
-		asperiores aspernatur voluptatibus nostrum aut officia id, vero quaerat, impedit ullam fugiat nam quo magnam!
-	</p>
-
-	<br>
-
 	</br>
 
 	<!--Include other homepage content and images-->

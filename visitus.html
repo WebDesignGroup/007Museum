@@ -15,6 +15,7 @@
             font-size: 20px;
             padding: 20px;
             width: 40%;
+            opacity: 0.6;
             transition: all 0.5s;
             cursor: pointer;
             margin: 5px;
@@ -25,7 +26,7 @@
             display: inline-block;
             position: relative;
             transition: 0.5s;
-        }        
+        }  
         .button span:after {
             content: '\00bb';
             position: absolute;
@@ -41,43 +42,40 @@
             opacity: 1;
             right: 0;
         }
+        .button:hover {opacity: 1}
     </style>
 
 
 </head>
 
 <header>
-    <nav>
+    
         <div class="logo">
-            <h4> James Bond <br>
-                Exhibition
-            </h4>
-        </div>
-        <ul class="nav-links">
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="videos.html">Videos</a></li>
-            <li><a href="store.html">Store</a></li>
-            <li><a href="visitus.html">Visit</a></li>
-        </ul>
-        <div class="animation start-home">
-
-
-        </div>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+            <h1> James Bond Exhibition
+            </h1>
         </div>
 
-    </nav>
+    
 </header>
 
 <body>
+    <nav>
+    <ul class="nav-links">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="visitus.html">Visit</a></li>
+    </ul>
+    <div class="animation start-home"> 
+
+
+    </div>
+</nav>
     <button type="button" class="button" style="vertical-align:middle"
     onclick="document.getElementById('date').innerHTML = Date()">
         <Span>
-            Click Here to View the Current Date and Time.
+            Click to View the Current Date and Time
         </Span>
     </button>
 
@@ -266,8 +264,9 @@
 
     <!--Include other homepage content and images-->
 </body>
-
+<br>
 <footer>
+    
     <div id="conatct">
         <strong>Email</strong>: 007museum@telia.com | <strong>Phone</strong>: 0481-129 60 | <strong>Address</strong>:
         Emmabodavägen 20, 382 45 Nybro, Sweden</p>
