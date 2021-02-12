@@ -8,13 +8,13 @@
         .button {
             display: inline-block;
             border-radius: 4px;
-            background-color: #8b2e2e;
+            background-color: #8d8a8a;
             border: none;
             color: #FFFFFF;
             text-align: center;
-            font-size: 20px;
+            font-size: 12px;
             padding: 20px;
-            width: 40%;
+            width: 80%;
             opacity: 0.6;
             transition: all 0.5s;
             cursor: pointer;
@@ -43,6 +43,22 @@
             right: 0;
         }
         .button:hover {opacity: 1}
+        
+        .leftcolumn {   
+  			float: left;
+  			width: 75%;
+		}
+		.rightcolumn {
+  			float: right;
+  			width: 25%;
+  			background-color: #f1f1f1;
+  			padding-left: 20px;
+		}
+		.card {
+  			background-color: white;
+  			padding: 20px;
+  			margin-top: 10px;
+		}
     </style>
 
 
@@ -63,85 +79,100 @@
 
 <body>
     <nav>
-    <ul class="nav-links">
-        <li><a href="homepage.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="videos.html">Videos</a></li>
-        <li><a href="store.html">Store</a></li>
-        <li><a href="visitus.html">Visit</a></li>
-    </ul>
-    <div class="animation start-home"> 
+        <ul class="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="visitus.html">Visit</a></li>
+        </ul>
+        <div class="animation start-home"> </div>
+    </nav>
 
+    <div class="leftcolumn">
+        <div class="card">
+            <h3>Booking your Ticket</h3>
+            <p>Pre-order of tickets a must until June 1st, please book your time.
+                The exhibition is recommended for all ages. We also take cash in place at the exhibition where you can pay by debit card or swish.</p>
+        </div>
 
     </div>
-</nav>
-    <button type="button" class="button" style="vertical-align:middle"
+    
+
+    
+
+    <div class="rightcolumn">
+		<div class="card">
+            <section class="openinghours">
+
+                <div class="header">
+                    
+                    <h2>Opening Hours</h2>
+                    <button type="button" class="button" style="vertical-align:middle"
     onclick="document.getElementById('date').innerHTML = Date()">
         <Span>
             Click to View the Current Date and Time
         </Span>
+        <p id="date"></p>
     </button>
+                </div>
+        
+                <table class="openinghourstable">
+        
+                    <tr id="Monday" title="Open Monday from 11AM - 3PM">
+                        <td> Monday </td>
+                        <td>11:00</td>
+                        <td>-</td>
+                        <td>15:00</td>
+                    </tr>
+        
+                    <tr id="Tuesday" title="Open Tuesday from 11AM TO 3PM">
+                        <td>Tuesday</td>
+                        <td>11:00</td>
+                        <td>-</td>
+                        <td>15:00</td>
+                    </tr>
+        
+                    <tr id="Wednesday" title="Open Wednesday from 11AM TO 3PM">
+                        <td>Wednesday</td>
+                        <td>11:00</td>
+                        <td>-</td>
+                        <td>15:00</td>
+                    </tr>
+        
+                    <tr id="Thursday" title="Open Thursday from 11AM TO 3PM">
+                        <td>Thursday</td>
+                        <td>11:00</td>
+                        <td>-</td>
+                        <td>15:00</td>
+                    </tr>
+        
+                    <tr id="Friday" title="Open Friday from 11AM TO 3PM">
+                        <td>Friday</td>
+                        <td>11:00</td>
+                        <td>-</td>
+                        <td>15:00</td>
+                    </tr>
+        
+                    <tr id="Saturday" title="Open Saturday from 10AM TO 2PM">
+                        <td>Saturday</td>
+                        <td>10:00</td>
+                        <td>-</td>
+                        <td>14:00</td>
+                    </tr>
+        
+                    <tr id="Sunday" title="Closed on Sunday">
+                        <td>Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+            </section>
 
-    <p id="date"></p>
+        </div>  
+    </div>
 
 
-    <section class="openinghours">
-
-        <div class="header">
-            <h4>Address: Emmabodavägen 20, 382 45 Nybro, Sweden</h4>
-            <h2>Opening Hours</h2>
-        </div>
-
-        <table class="openinghourstable">
-
-            <tr id="Monday" title="Open Monday from 11AM - 3PM">
-                <td> Monday </td>
-                <td>11:00</td>
-                <td>-</td>
-                <td>15:00</td>
-            </tr>
-
-            <tr id="Tuesday" title="Open Tuesday from 11AM TO 3PM">
-                <td>Tuesday</td>
-                <td>11:00</td>
-                <td>-</td>
-                <td>15:00</td>
-            </tr>
-
-            <tr id="Wednesday" title="Open Wednesday from 11AM TO 3PM">
-                <td>Wednesday</td>
-                <td>11:00</td>
-                <td>-</td>
-                <td>15:00</td>
-            </tr>
-
-            <tr id="Thursday" title="Open Thursday from 11AM TO 3PM">
-                <td>Thursday</td>
-                <td>11:00</td>
-                <td>-</td>
-                <td>15:00</td>
-            </tr>
-
-            <tr id="Friday" title="Open Friday from 11AM TO 3PM">
-                <td>Friday</td>
-                <td>11:00</td>
-                <td>-</td>
-                <td>15:00</td>
-            </tr>
-
-            <tr id="Saturday" title="Open Saturday from 10AM TO 2PM">
-                <td>Saturday</td>
-                <td>10:00</td>
-                <td>-</td>
-                <td>14:00</td>
-            </tr>
-
-            <tr id="Sunday" title="Closed on Sunday">
-                <td>Sunday</td>
-                <td>Closed</td>
-            </tr>
-        </table>
-    </section>
+    
 
 
     <div id="map"></div>
