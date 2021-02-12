@@ -36,6 +36,12 @@
 </header>
 
 <body>
+    <button type="button"
+    onclick="document.getElementById('date').innerHTML = Date()">
+    Click Here to View the Current Date and Time.
+    </button>
+
+    <p id="date"></p>
 
 
     <section class="openinghours">
@@ -138,6 +144,9 @@
 
     <div id="map"></div>
     <script>
+        document.getElementById("date").style.color = "black";
+        document.getElementById("date").style.fontFamily = "Helvetica";
+        document.getElementById("date").style.fontSize = "larger";    
         function initMap() {
             var options = {
                 center: { lat: 56.740, lng: 15.892 },
