@@ -1,319 +1,317 @@
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="HTML5, CSS3">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .button {
-            display: inline-block;
-            border-radius: 4px;
-            background-color: #8d8a8a;
-            border: none;
-            color: #FFFFFF;
-            text-align: center;
-            font-size: 12px;
-            padding: 20px;
-            width: 80%;
-            opacity: 0.6;
-            transition: all 0.5s;
-            cursor: pointer;
-            margin: 5px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .button span {
-            cursor: pointer;
-            display: inline-block;
-            position: relative;
-            transition: 0.5s;
-        }  
-        .button span:after {
-            content: '\00bb';
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.5s;
-        }  
-        .button:hover span {
-            padding-right: 25px;
-        }   
-        .button:hover span:after {
-            opacity: 1;
-            right: 0;
-        }
-        .button:hover {opacity: 1}
-        
-        .leftcolumn {   
-  			float: left;
-  			width: 75%;
-		}
-		.rightcolumn {
-  			float: right;
-  			width: 25%;
-  			background-color: #f1f1f1;
-  			padding-left: 20px;
-		}
-		.card {
-  			background-color: white;
-  			padding: 20px;
-  			margin-top: 10px;
-		}
-        tr:hover {background-color: #f5f5f5;}
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="HTML5, CSS3">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .button {
+                display: inline-block;
+                border-radius: 4px;
+                background-color: #8d8a8a;
+                border: none;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 12px;
+                padding: 20px;
+                width: 80%;
+                opacity: 0.6;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 5px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }  
+            .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }  
+            .button:hover span {
+                padding-right: 25px;
+            }   
+            .button:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+            .button:hover {opacity: 1}
+            
+            .leftcolumn {   
+                float: left;
+                width: 75%;
+            }
+            .rightcolumn {
+                float: right;
+                width: 25%;
+                background-color: #f1f1f1;
+                padding-left: 20px;
+            }
+            .card {
+                background-color: white;
+                padding: 20px;
+                margin-top: 10px;
+            }
+            tr:hover {background-color: #f5f5f5;}
 
-        .openinghourstable{
-            margin-left: auto;
-            margin-right: auto;
-            border: 1px solid black;
-        }
-    </style>
-</head>
+            .openinghourstable{
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
 
-<header>
-    
+    <header>
         <div class="logo">
-            <h1> James Bond Exhibition
+            <h1> James Bond <br>
+                Exhibition
             </h1>
             <div id="logo">
                 <img src="https://i.pinimg.com/originals/d1/e6/2b/d1e62b72437ea8b418a0f9e08554acc6.png" width="300px" height="100px" alt="007logo">
             </div>
         </div>
+    </header>
 
-    
-</header>
-
-<body>
-    <nav>
-        <ul class="nav-links">
-            <li><a href="homepage.html">| Home |</a></li>
-            <li><a href="gallery.html">| Gallery |</a></li>
-            <li><a href="videos.html">| Videos |</a></li>
-            <li><a href="store.html">| Store |</a></li>
-            <li><a href="visitus.html">| Visit |</a></li>
-        </ul>
-        <div class="animation start-home"> </div>
-    </nav>
-
-    <div class="leftcolumn">
-        <div class="card">
-            <h3>Booking your Ticket</h3>
-            <p>Pre-order of tickets a must until June 1st, please book your time.
-                The exhibition is recommended for all ages. We also take cash in place at the exhibition where you can pay by debit card or swish.
-            </p>
-            <br>
-            <h3>
-                Prices (per person)
-            </h3>
-            <ul>
-                <li>Adult - 175kr</li>
-                <li>Senior(65+) - 125kr</li>
-                <li>Youth(15-16 years) - 100kr</li>
-                <li>Student with ID - 100kr</li>
-                <li>School Class - 100kr</li>
-                <li>Children under 5 years free of charge for the mum and dads company</li>
+    <body>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="homepage.html">| Home |</a></li>
+                <li><a href="gallery.html">| Gallery |</a></li>
+                <li><a href="videos.html">| Videos |</a></li>
+                <li><a href="store.html">| Store |</a></li>
+                <li><a href="visitus.html">| Visit |</a></li>
             </ul>
+            <div class="animation start-home"> </div>
+        </nav>
+
+        <div class="leftcolumn">
+            <div class="card">
+                <h3>Booking your Ticket</h3>
+                <p>Pre-order of tickets a must until June 1st, please book your time.
+                    The exhibition is recommended for all ages. We also take cash in place at the exhibition where you can pay by debit card or swish.
+                </p>
+                <br>
+                <h3>
+                    Prices (per person)
+                </h3>
+                <ul>
+                    <li>Adult - 175kr</li>
+                    <li>Senior(65+) - 125kr</li>
+                    <li>Youth(15-16 years) - 100kr</li>
+                    <li>Student with ID - 100kr</li>
+                    <li>School Class - 100kr</li>
+                    <li>Children under 5 years free of charge for the mum and dads company</li>
+                </ul>
+            </div>
         </div>
-    </div>
-    
-    <div class="rightcolumn">
-		<div class="card">
-            <section class="openinghours">
-                <div class="header">
-                    <h2>Opening Hours</h2>
-                    <button type="button" class="button" style="vertical-align:middle"
-                    onclick="document.getElementById('date').innerHTML = Date()">
-                        <Span>Click to View the Current Date and Time</Span>
-                        <p id="date"></p>
-                    </button>
-                </div>
+        
+        <div class="rightcolumn">
+            <div class="card">
+                <section class="openinghours">
+                    <div class="header">
+                        <h2>Opening Hours</h2>
+                        <button type="button" class="button" style="vertical-align:middle"
+                        onclick="document.getElementById('date').innerHTML = Date()">
+                            <Span>Click to View the Current Date and Time</Span>
+                            <p id="date"></p>
+                        </button>
+                    </div>
+                
+                    <table class="openinghourstable">
             
-                <table class="openinghourstable">
-        
-                    <tr id="Monday" title="Open Monday from 11AM - 3PM">
-                        <td> <strong>Monday </strong> </td>
-                        <td>11:00</td>
-                        <td>-</td>
-                        <td>15:00</td>
-                    </tr>
-        
-                    <tr id="Tuesday" title="Open Tuesday from 11AM TO 3PM">
-                        <td><strong>Tuesday </strong></td>
-                        <td>11:00</td>
-                        <td>-</td>
-                        <td>15:00</td>
-                    </tr>
-        
-                    <tr id="Wednesday" title="Open Wednesday from 11AM TO 3PM">
-                        <td><strong>Wednesday</strong></td>
-                        <td>11:00</td>
-                        <td>-</td>
-                        <td>15:00</td>
-                    </tr>
-        
-                    <tr id="Thursday" title="Open Thursday from 11AM TO 3PM">
-                        <td><strong>Thursday</strong></td>
-                        <td>11:00</td>
-                        <td>-</td>
-                        <td>15:00</td>
-                    </tr>
-        
-                    <tr id="Friday" title="Open Friday from 11AM TO 3PM">
-                        <td><strong>Friday</strong></td>
-                        <td>11:00</td>
-                        <td>-</td>
-                        <td>15:00</td>
-                    </tr>
-        
-                    <tr id="Saturday" title="Open Saturday from 10AM TO 2PM">
-                        <td><strong>Saturday</strong></td>
-                        <td>10:00</td>
-                        <td>-</td>
-                        <td>14:00</td>
-                    </tr>
-        
-                    <tr id="Sunday" title="Closed on Sunday">
-                        <td><strong>Sunday</strong></td>
-                        <td>Closed</td>
-                    </tr>
-                </table>
-            </section>
+                        <tr id="Monday" title="Open Monday from 11AM - 3PM">
+                            <td> <strong>Monday </strong> </td>
+                            <td>11:00</td>
+                            <td>-</td>
+                            <td>15:00</td>
+                        </tr>
+            
+                        <tr id="Tuesday" title="Open Tuesday from 11AM TO 3PM">
+                            <td><strong>Tuesday </strong></td>
+                            <td>11:00</td>
+                            <td>-</td>
+                            <td>15:00</td>
+                        </tr>
+            
+                        <tr id="Wednesday" title="Open Wednesday from 11AM TO 3PM">
+                            <td><strong>Wednesday</strong></td>
+                            <td>11:00</td>
+                            <td>-</td>
+                            <td>15:00</td>
+                        </tr>
+            
+                        <tr id="Thursday" title="Open Thursday from 11AM TO 3PM">
+                            <td><strong>Thursday</strong></td>
+                            <td>11:00</td>
+                            <td>-</td>
+                            <td>15:00</td>
+                        </tr>
+            
+                        <tr id="Friday" title="Open Friday from 11AM TO 3PM">
+                            <td><strong>Friday</strong></td>
+                            <td>11:00</td>
+                            <td>-</td>
+                            <td>15:00</td>
+                        </tr>
+            
+                        <tr id="Saturday" title="Open Saturday from 10AM TO 2PM">
+                            <td><strong>Saturday</strong></td>
+                            <td>10:00</td>
+                            <td>-</td>
+                            <td>14:00</td>
+                        </tr>
+            
+                        <tr id="Sunday" title="Closed on Sunday">
+                            <td><strong>Sunday</strong></td>
+                            <td>Closed</td>
+                        </tr>
+                    </table>
+                </section>
 
-        </div>  
-    </div>
+            </div>  
+        </div>
 
 
-    
+        
 
 
-    <div id="map"></div>
-    <script>
-        document.getElementById("date").style.color = "black";
-        document.getElementById("date").style.fontFamily = "Helvetica";
-        document.getElementById("date").style.fontSize = "12px";    
-        function initMap() {
-            var options = {
-                center: { lat: 56.740, lng: 15.892 },
-                zoom: 15,
-                styles: [
-                    { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
-                    {
-                        elementType: "labels.text.stroke",
-                        stylers: [{ color: "#242f3e" }],
-                    },
-                    {
-                        elementType: "labels.text.fill",
-                        stylers: [{ color: "#746855" }],
-                    },
-                    {
-                        featureType: "administrative.locality",
-                        elementType: "labels.text.fill",
-                        stylers: [{ color: "#d59563" }],
-                    },
-                    {
-                        featureType: "poi",
-                        elementType: "labels.text.fill",
-                        stylers: [{ color: "#d59563" }],
-                    },
-                    {
-                        featureType: "poi.park",
-                        elementType: "geometry",
-                        stylers: [{ color: "#263c3f" }],
-                    },
-                    {
-                        featureType: "poi.park",
-                        elementType: "labels.text.fill",
-                        stylers: [{ color: "#6b9a76" }],
-                    },
-                    {
-                        featureType: "road",
-                        elementType: "geometry",
-                        stylers: [{ color: "#38414e" }],
-                    },
-                    {
-                        featureType: "road",
-                        elementType: "geometry.stroke",
-                        stylers: [{ color: "#212a37" }],
-                    },
-                    {
-                        featureType: "road",
-                        elementType: "labels.text.fill",
-                        stylers: [{ color: "#9ca5b3" }],
-                    },
-                    {
-                        featureType: "road.highway",
-                        elementType: "geometry",
-                        stylers: [{ color: "#746855" }],
-                    },
-                    {
-                        featureType: "road.highway",
-                        elementType: "geometry.stroke",
-                        stylers: [{ color: "#1f2835" }],
-                    },
-                    {
-                        featureType: "road.highway",
-                        elementType: "labels.text.fill",
-                        stylers: [{ color: "#f3d19c" }],
-                    },
-                    {
-                        featureType: "transit",
-                        elementType: "geometry",
-                        stylers: [{ color: "#2f3948" }],
-                    },
-                    {
-                        featureType: "transit.station",
-                        elementType: "labels.text.fill",
-                        stylers: [{ color: "#d59563" }],
-                    },
-                    {
-                        featureType: "water",
-                        elementType: "geometry",
-                        stylers: [{ color: "#17263c" }],
-                    },
-                    {
-                        featureType: "water",
-                        elementType: "labels.text.fill",
-                        stylers: [{ color: "#515c6d" }],
-                    },
-                    {
-                        featureType: "water",
-                        elementType: "labels.text.stroke",
-                        stylers: [{ color: "#17263c" }],
-                    },
-                ]
+        <div id="map"></div>
+        <script>
+            document.getElementById("date").style.color = "black";
+            document.getElementById("date").style.fontFamily = "Helvetica";
+            document.getElementById("date").style.fontSize = "12px";    
+            function initMap() {
+                var options = {
+                    center: { lat: 56.740, lng: 15.892 },
+                    zoom: 15,
+                    styles: [
+                        { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+                        {
+                            elementType: "labels.text.stroke",
+                            stylers: [{ color: "#242f3e" }],
+                        },
+                        {
+                            elementType: "labels.text.fill",
+                            stylers: [{ color: "#746855" }],
+                        },
+                        {
+                            featureType: "administrative.locality",
+                            elementType: "labels.text.fill",
+                            stylers: [{ color: "#d59563" }],
+                        },
+                        {
+                            featureType: "poi",
+                            elementType: "labels.text.fill",
+                            stylers: [{ color: "#d59563" }],
+                        },
+                        {
+                            featureType: "poi.park",
+                            elementType: "geometry",
+                            stylers: [{ color: "#263c3f" }],
+                        },
+                        {
+                            featureType: "poi.park",
+                            elementType: "labels.text.fill",
+                            stylers: [{ color: "#6b9a76" }],
+                        },
+                        {
+                            featureType: "road",
+                            elementType: "geometry",
+                            stylers: [{ color: "#38414e" }],
+                        },
+                        {
+                            featureType: "road",
+                            elementType: "geometry.stroke",
+                            stylers: [{ color: "#212a37" }],
+                        },
+                        {
+                            featureType: "road",
+                            elementType: "labels.text.fill",
+                            stylers: [{ color: "#9ca5b3" }],
+                        },
+                        {
+                            featureType: "road.highway",
+                            elementType: "geometry",
+                            stylers: [{ color: "#746855" }],
+                        },
+                        {
+                            featureType: "road.highway",
+                            elementType: "geometry.stroke",
+                            stylers: [{ color: "#1f2835" }],
+                        },
+                        {
+                            featureType: "road.highway",
+                            elementType: "labels.text.fill",
+                            stylers: [{ color: "#f3d19c" }],
+                        },
+                        {
+                            featureType: "transit",
+                            elementType: "geometry",
+                            stylers: [{ color: "#2f3948" }],
+                        },
+                        {
+                            featureType: "transit.station",
+                            elementType: "labels.text.fill",
+                            stylers: [{ color: "#d59563" }],
+                        },
+                        {
+                            featureType: "water",
+                            elementType: "geometry",
+                            stylers: [{ color: "#17263c" }],
+                        },
+                        {
+                            featureType: "water",
+                            elementType: "labels.text.fill",
+                            stylers: [{ color: "#515c6d" }],
+                        },
+                        {
+                            featureType: "water",
+                            elementType: "labels.text.stroke",
+                            stylers: [{ color: "#17263c" }],
+                        },
+                    ]
+
+                }
+
+
+
+                map = new google.maps.Map(document.getElementById("map"), options);
+
+                const image =
+                    "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+                var marker = new google.maps.Marker({
+                    position: { lat: 56.740, lng: 15.892 },
+                    map: map,
+                    icon: image
+                });
 
             }
 
 
 
-            map = new google.maps.Map(document.getElementById("map"), options);
 
-            const image =
-                "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
-            var marker = new google.maps.Marker({
-                position: { lat: 56.740, lng: 15.892 },
-                map: map,
-                icon: image
-            });
+        </script>
 
-        }
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtPnzwj5Cff1WvC6k7AKMJFyGnhMDi4Q4&callback=initMap&libraries=&v=weekly">
+        </script>
 
-
-
-
-    </script>
-
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtPnzwj5Cff1WvC6k7AKMJFyGnhMDi4Q4&callback=initMap&libraries=&v=weekly">
-    </script>
-
-    <!--Include other homepage content and images-->
-</body>
-<br>
-<footer>
-    
-    <div id="conatct">
-        <strong>Email</strong>: 007museum@telia.com | <strong>Phone</strong>: 0481-129 60 | <strong>Address</strong>:
-        Emmabodavägen 20, 382 45 Nybro, Sweden</p>
-    </div>
-</footer>
+        <!--Include other homepage content and images-->
+    </body>
+    <br>
+    <footer>
+        
+        <div id="conatct">
+            <strong>Email</strong>: 007museum@telia.com | <strong>Phone</strong>: 0481-129 60 | <strong>Address</strong>:
+            Emmabodavägen 20, 382 45 Nybro, Sweden</p>
+        </div>
+    </footer>
 
 </html>
