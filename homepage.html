@@ -21,9 +21,12 @@
 				padding-left: 20px;
 			}
 			.card {
-				background-color: white;
+				background-color: #1A1A1A;
 				padding: 20px;
 				margin-top: 10px;
+				align-items: center;
+				text-align: center;
+				
 			}
 			@media screen and (max-width: 800px) {
 				.leftcolumn, .rightcolumn {   
@@ -31,31 +34,32 @@
 				padding: 0;
 				}
 			}
-			.image{
-				background-color: rgba(228, 228, 228, 0.897);
-				width: 100%;
-				padding: 20px;
+			h1{
+				text-align: center;
 			}
-			p {
-				font-size: 15px;
-				font-family: Arial, Helvetica, sans-serif;
+			.avatar{
+				border-radius: 50%;
+				margin: 0 auto;
+				width: 60%;
+				
 			}
+			
+			
 			.flexcontainer1{
 				display: flex;
 				flex-direction: column;
-				background-color: white;
+				background-color: rgb(0, 0, 0);
+			}
+			.column100{
+				width:100%;
+				
 			}
 		</style>
 	</head>
 
 	<header>
 		<div class="logo">
-			<h1> 007 MUSEUM <br>
-				
-			</h1>
-			<div id="logo">
-				<img src="https://i.pinimg.com/originals/d1/e6/2b/d1e62b72437ea8b418a0f9e08554acc6.png" width="300px" height="100px" alt="007logo">
-			</div>
+			<h1> 007 MUSEUM </h1>
 		</div>
 	</header>
 
@@ -71,34 +75,17 @@
 			</ul>
 			<div class="animation start-home"></div>
 		</nav>
+		
+		<img src="https://img.cinemablend.com/filter:scale/quill/3/b/c/0/1/5/3bc0155961e8ac4c235dd42a6983306bc3e847e8.jpg?fw=1200" width="100%">
+		<br>
+		<h1>WELCOME TO OUR MUSEUM</h1>
 		<!--RIGHT COLUMN-->
-		<div class="rightcolumn">
-			<div class="card">
-				<h2>About the Owner</h2>
-				<p>
-					One James Bond superfan has turned his passion for all-things-007 into a full-fledged tourist attraction. 
-					The James Bond Museum in the Swedish city of Nybro has everything to make any 007 fan swoon. James Bond Gunnar Schäfer 
-					(yes, that is the name of the founder of this museum) has amassed a collection of over 60,000 items. 
-				</p>
-				
-				<div class="image">
-					<a target="_blank" href="http://www.007museum.com/bond-james-mi6.jpg">
-						<img src="http://www.007museum.com/bond-james-mi6.jpg" alt="Owner of the 007 Museum" width="250" height="200">
-					</a>
-					<div class="description"><em>(The Owner James Bond Gunnar Schäfer)</em></div>
-				</div>
-			</div>
-			<div class="card">
-				<h3>Follow Us</h3>
-				<div class="flex-container">
-					<div><a href="https://www.facebook.com/bondnybro/"> On Facebook</a></div>
-					<div><a href="https://twitter.com/007museum?lang=en">On Twitter</a></div>  
-				</div>
-			</div>
+		
+			
 		</div>
 		<!--LEFT COLUMN-->
-		<div class="leftcolumn">
-			<div class="card">
+		<div class="column100">
+			
 				<h2>Our Exhibitions</h2>
 				<p>
 					Welcome to The World’s only James Bond 007 Museum, located in Nybro Sweden. Over 1,000 square meter.
@@ -127,12 +114,18 @@
 					agent with a visit to our spectacular show rooms.
 				</p>
 				<br>
-				<div class="image">
-					<img src="https://img.cinemablend.com/filter:scale/quill/3/b/c/0/1/5/3bc0155961e8ac4c235dd42a6983306bc3e847e8.jpg?fw=1200" width="100%">
+				<div class="card">
+					
+						<img src="http://www.007museum.com/007bond_james.jpg"  alt="owner" class="avatar" >
+					<br>
+					<h2>About the Owner</h2>
+					<p>
+						One James Bond superfan has turned his passion for all-things-007 into a full-fledged tourist attraction. 
+                    	The James Bond Museum in the Swedish city of Nybro has everything to make any 007 fan swoon. James Bond Gunnar Schäfer 
+                    	(yes, that is the name of the founder of this museum) has amassed a collection of over 60,000 items.
+					</p>
 				</div>
-
 			
-			</div>
 		</div>
 		<!--END LEFT COLUMN-->
 	</body>

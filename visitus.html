@@ -46,36 +46,28 @@
             .leftcolumn {   
                 float: left;
                 width: 75%;
+                background-color: #000000;
             }
+            
             .rightcolumn {
                 float: right;
                 width: 25%;
-                background-color: #f1f1f1;
+                background-color: #000000;
                 padding-left: 20px;
             }
             .card {
-                background-color: white;
+                background-color: #000000;
                 padding: 20px;
                 margin-top: 10px;
             }
-            tr:hover {background-color: #f5f5f5;}
-
-            .openinghourstable{
-                margin-left: auto;
-                margin-right: auto;
-                border: 1px solid black;
-            }
+            
         </style>
     </head>
 
     <header>
         <div class="logo">
-            <h1> James Bond <br>
-                Exhibition
-            </h1>
-            <div id="logo">
-                <img src="https://i.pinimg.com/originals/d1/e6/2b/d1e62b72437ea8b418a0f9e08554acc6.png" width="300px" height="100px" alt="007logo">
-            </div>
+            <h1> 007 MUSEUM </h1>
+            
         </div>
     </header>
 
@@ -93,89 +85,19 @@
 
         <div class="leftcolumn">
             <div class="card">
-                <h3>Booking your Ticket</h3>
+                <h3>Opening Hours</h3>
+                <p>
+                    Monday-Friday: 9am - 6pm
+                    Saturday: 10am -  2pm
+                    Sunday: Closed
+                </p>
+                <br>
+                <h3>Booking your Tickets</h3>
                 <p>Pre-order of tickets a must until June 1st, please book your time.
                     The exhibition is recommended for all ages. We also take cash in place at the exhibition where you can pay by debit card or swish.
                 </p>
                 <br>
-                <h3>
-                    Prices (per person)
-                </h3>
-                <ul>
-                    <li>Adult - 175kr</li>
-                    <li>Senior(65+) - 125kr</li>
-                    <li>Youth(15-16 years) - 100kr</li>
-                    <li>Student with ID - 100kr</li>
-                    <li>School Class - 100kr</li>
-                    <li>Children under 5 years free of charge for the mum and dads company</li>
-                </ul>
             </div>
-        </div>
-        
-        <div class="rightcolumn">
-            <div class="card">
-                <section class="openinghours">
-                    <div class="header">
-                        <h2>Opening Hours</h2>
-                        <button type="button" class="button" style="vertical-align:middle"
-                        onclick="document.getElementById('date').innerHTML = Date()">
-                            <Span>Click to View the Current Date and Time</Span>
-                            <p id="date"></p>
-                        </button>
-                    </div>
-                
-                    <table class="openinghourstable">
-            
-                        <tr id="Monday" title="Open Monday from 11AM - 3PM">
-                            <td> <strong>Monday </strong> </td>
-                            <td>11:00</td>
-                            <td>-</td>
-                            <td>15:00</td>
-                        </tr>
-            
-                        <tr id="Tuesday" title="Open Tuesday from 11AM TO 3PM">
-                            <td><strong>Tuesday </strong></td>
-                            <td>11:00</td>
-                            <td>-</td>
-                            <td>15:00</td>
-                        </tr>
-            
-                        <tr id="Wednesday" title="Open Wednesday from 11AM TO 3PM">
-                            <td><strong>Wednesday</strong></td>
-                            <td>11:00</td>
-                            <td>-</td>
-                            <td>15:00</td>
-                        </tr>
-            
-                        <tr id="Thursday" title="Open Thursday from 11AM TO 3PM">
-                            <td><strong>Thursday</strong></td>
-                            <td>11:00</td>
-                            <td>-</td>
-                            <td>15:00</td>
-                        </tr>
-            
-                        <tr id="Friday" title="Open Friday from 11AM TO 3PM">
-                            <td><strong>Friday</strong></td>
-                            <td>11:00</td>
-                            <td>-</td>
-                            <td>15:00</td>
-                        </tr>
-            
-                        <tr id="Saturday" title="Open Saturday from 10AM TO 2PM">
-                            <td><strong>Saturday</strong></td>
-                            <td>10:00</td>
-                            <td>-</td>
-                            <td>14:00</td>
-                        </tr>
-            
-                        <tr id="Sunday" title="Closed on Sunday">
-                            <td><strong>Sunday</strong></td>
-                            <td>Closed</td>
-                        </tr>
-                    </table>
-                </section>
-
-            </div>  
         </div>
 
 
