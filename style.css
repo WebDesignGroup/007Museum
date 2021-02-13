@@ -11,20 +11,15 @@
     position:relative;
   }
 .header h1 {
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
     justify-content: center;
     position: relative;
-    top: 18px
+    top: 10px
     left 10px;
     
   }
-  .header img {
-    float: right;
-    width: 100px;
-    height: 100px;
-    background: rgb(255, 255, 255);
-  }
+  
 
 nav{
     display: block;
@@ -59,8 +54,8 @@ body{
 
 #logo{ 
 	position:absolute; 
-	top:0; 
-	right:0; 
+	top: 0;;
+	left: 260px;; 
     overflow:hidden;
     margin-right: 20px;
 } 
