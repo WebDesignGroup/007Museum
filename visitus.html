@@ -3,6 +3,10 @@
         <meta charset="utf-8">
         <meta name="description" content="HTML5, CSS3">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
         <style>
             .button {
                 display: inline-block;
@@ -56,11 +60,24 @@
                 padding-left: 20px;
             }
             .card {
-                background-color: #000000;
+                background-color: #1A1A1A;
                 padding: 20px;
                 margin-top: 10px;
             }
-            
+           
+			h2{
+    			color:#f1f1f1;
+    			text-align: left;
+    
+			} 
+			h3{
+    			color:#f1f1f1;
+    			text-align: left;
+			}
+            p {
+                text-align: left;
+                padding: 10px;
+            }
         </style>
     </head>
 
@@ -83,22 +100,32 @@
             <div class="animation start-home"> </div>
         </nav>
 
-        <div class="leftcolumn">
-            <div class="card">
-                <h3>Opening Hours</h3>
-                <p>
-                    Monday-Friday: 9am - 6pm
-                    Saturday: 10am -  2pm
-                    Sunday: Closed
-                </p>
+        <div class="card">
+            <h3>Opening Hours</h3>
+            <p>
+                Monday-Friday: 9am - 6pm 
                 <br>
-                <h3>Booking your Tickets</h3>
-                <p>Pre-order of tickets a must until June 1st, please book your time.
-                    The exhibition is recommended for all ages. We also take cash in place at the exhibition where you can pay by debit card or swish.
-                </p>
+                Saturday: 10am -  2pm
                 <br>
-            </div>
+                Sunday: Closed
+            </p>
+            <br>
+            <h3>Booking your Tickets</h3>
+            <p>Pre-order of tickets a must until June 1st, please book your time.
+                The exhibition is recommended for all ages. We also take cash in place at the exhibition where you can pay by debit card or swish. 
+                Tickets can be bought through our  online shop.
+            </p>
+            <br>
+            <h3>Contact Information</h3>
+                <div id="conatct">
+                    <p>
+                        <strong>Email</strong>: 007museum@telia.com | <strong>Phone</strong>: 0481-129 60 | <strong>Address</strong>:
+                        Emmabodavägen 20, 382 45 Nybro, Sweden
+                    </p>
+                </div>
         </div>
+            
+        
 
 
         
@@ -229,11 +256,12 @@
     </body>
     <br>
     <footer>
+        <a href="https://www.facebook.com/bondnybro/" class="fa fa-facebook"></a>
+		<a href="https://twitter.com/007museum?lang=en" class="fa fa-twitter"></a>
+		<a href="https://www.instagram.com/jamesbondmuseum/" class="fa fa-instagram"></a>
+		
         
-        <div id="conatct">
-            <strong>Email</strong>: 007museum@telia.com | <strong>Phone</strong>: 0481-129 60 | <strong>Address</strong>:
-            Emmabodavägen 20, 382 45 Nybro, Sweden</p>
-        </div>
+        
     </footer>
 
 </html>
