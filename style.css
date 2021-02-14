@@ -157,12 +157,11 @@ footer{
     color: rgb(255, 255, 255);
   }
   .productcard {
-  			
     max-width: 300px;
     margin: auto;
     text-align: center;
     font-family: 'Playfair Display', serif;
-  font-size: 12px;
+    font-size: 12px;
 }
 .price {
     color: rgb(255, 255, 255);
@@ -182,16 +181,17 @@ footer{
 }
 @media (max-width: 800px) {
     .column {
-  flex: 50%;
-      max-width: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
 }
 @media (max-width: 600px) {
     .column {
-  flex: 100%;
-  max-width: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
