@@ -1,203 +1,388 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="HTML5, CSS3">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com"> 
-		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <style>
-            .card {
-                text-align: left;
-                align-items: center;
-            }
-            h3, p{
-    			text-align: left;
-            } 
-			p {
-                padding: 10px;
-            }
-        </style>
-    </head>
 
-    <header>
-        <div class="logo">
-            <h1> 007 MUSEUM </h1>
-        </div>
-    </header>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="HTML5, CSS3">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <body>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="homepage.html">| Home |</a></li>
-                <li><a href="gallery.html">| Gallery |</a></li>
-                <li><a href="videos.html">| Videos |</a></li>
-                <li><a href="store.html">| Store |</a></li>
-                <li><a href="visitus.html">| Visit |</a></li>
-            </ul>
-            <div class="animation start-home"> </div>
-        </nav>
+    <style>
+        .card {
+            text-align: left;
+            align-items: center;
+        }
 
-        <div class="card">
-            <h3>Opening Hours</h3>
+        h3,
+        p {
+            text-align: left;
+        }
+
+        p {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<header>
+    <div class="logo">
+        <h1> 007 MUSEUM </h1>
+    </div>
+</header>
+
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="homepage.html">| Home |</a></li>
+            <li><a href="gallery.html">| Gallery |</a></li>
+            <li><a href="videos.html">| Videos |</a></li>
+            <li><a href="store.html">| Store |</a></li>
+            <li><a href="visitus.html">| Visit |</a></li>
+        </ul>
+        <div class="animation start-home"> </div>
+    </nav>
+
+    <div class="card">
+        <h3>Opening Hours</h3>
+        <p>
+            Monday-Friday: 9am - 6pm
+            <br>
+            Saturday: 10am - 2pm
+            <br>
+            Sunday: Closed
+        </p>
+        <br>
+        <h3>Booking your Tickets</h3>
+        <p>Pre-order of tickets a must until June 1st, please book your time.
+            The exhibition is recommended for all ages. We also take cash in place at the exhibition where you can pay
+            by debit card or swish.
+            Tickets can be bought through our online shop.
+        </p>
+        <br>
+        <h3>Contact Information</h3>
+        <div id="conatct">
             <p>
-                Monday-Friday: 9am - 6pm 
+                <strong>Email</strong>: 007museum@telia.com
                 <br>
-                Saturday: 10am -  2pm
-                <br>
-                Sunday: Closed
+                <strong>Phone</strong>: 0481-129 60
             </p>
-            <br>
-            <h3>Booking your Tickets</h3>
-            <p>Pre-order of tickets a must until June 1st, please book your time.
-                The exhibition is recommended for all ages. We also take cash in place at the exhibition where you can pay by debit card or swish. 
-                Tickets can be bought through our  online shop.
-            </p>
-            <br>
-            <h3>Contact Information</h3>
-            <div id="conatct">
-                <p>
-                    <strong>Email</strong>: 007museum@telia.com 
-                    <br>
-                     <strong>Phone</strong>: 0481-129 60 
-                </p>
-            </div>
         </div>
-        <div class="card">
-            <div id="location">
-                <strong>Address</strong>: Emmabodavägen 20, 382 45 Nybro, Sweden
-            </div>
+    </div>
+    <div class="card">
+        <div id="location">
+            <strong>Address</strong>: Emmabodavägen 20, 382 45 Nybro, Sweden
         </div>
-            
-         <div id="map"></div>
-        <script>
-            document.getElementById("date").style.color = "black";
-            document.getElementById("date").style.fontFamily = "Helvetica";
-            document.getElementById("date").style.fontSize = "12px";    
-            function initMap() {
-                var options = {
-                    center: { lat: 56.740, lng: 15.892 },
-                    zoom: 15,
-                    styles: [
-                        { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
-                        {
-                            elementType: "labels.text.stroke",
-                            stylers: [{ color: "#242f3e" }],
-                        },
-                        {
-                            elementType: "labels.text.fill",
-                            stylers: [{ color: "#746855" }],
-                        },
-                        {
-                            featureType: "administrative.locality",
-                            elementType: "labels.text.fill",
-                            stylers: [{ color: "#d59563" }],
-                        },
-                        {
-                            featureType: "poi",
-                            elementType: "labels.text.fill",
-                            stylers: [{ color: "#d59563" }],
-                        },
-                        {
-                            featureType: "poi.park",
-                            elementType: "geometry",
-                            stylers: [{ color: "#263c3f" }],
-                        },
-                        {
-                            featureType: "poi.park",
-                            elementType: "labels.text.fill",
-                            stylers: [{ color: "#6b9a76" }],
-                        },
-                        {
-                            featureType: "road",
-                            elementType: "geometry",
-                            stylers: [{ color: "#38414e" }],
-                        },
-                        {
-                            featureType: "road",
-                            elementType: "geometry.stroke",
-                            stylers: [{ color: "#212a37" }],
-                        },
-                        {
-                            featureType: "road",
-                            elementType: "labels.text.fill",
-                            stylers: [{ color: "#9ca5b3" }],
-                        },
-                        {
-                            featureType: "road.highway",
-                            elementType: "geometry",
-                            stylers: [{ color: "#746855" }],
-                        },
-                        {
-                            featureType: "road.highway",
-                            elementType: "geometry.stroke",
-                            stylers: [{ color: "#1f2835" }],
-                        },
-                        {
-                            featureType: "road.highway",
-                            elementType: "labels.text.fill",
-                            stylers: [{ color: "#f3d19c" }],
-                        },
-                        {
-                            featureType: "transit",
-                            elementType: "geometry",
-                            stylers: [{ color: "#2f3948" }],
-                        },
-                        {
-                            featureType: "transit.station",
-                            elementType: "labels.text.fill",
-                            stylers: [{ color: "#d59563" }],
-                        },
-                        {
-                            featureType: "water",
-                            elementType: "geometry",
-                            stylers: [{ color: "#17263c" }],
-                        },
-                        {
-                            featureType: "water",
-                            elementType: "labels.text.fill",
-                            stylers: [{ color: "#515c6d" }],
-                        },
-                        {
-                            featureType: "water",
-                            elementType: "labels.text.stroke",
-                            stylers: [{ color: "#17263c" }],
-                        },
-                    ]
+    </div>
 
-                }
-
-
-
-                map = new google.maps.Map(document.getElementById("map"), options);
-
-                const image =
-                    "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
-                var marker = new google.maps.Marker({
-                    position: { lat: 56.740, lng: 15.892 },
-                    map: map,
-                    icon: image
-                });
+    <div id="map"></div>
+    <script>
+        document.getElementById("date").style.color = "black";
+        document.getElementById("date").style.fontFamily = "Helvetica";
+        document.getElementById("date").style.fontSize = "12px";
+        function initMap() {
+            var options = {
+                center: { lat: 56.740, lng: 15.892 },
+                zoom: 13,
+                gestureHandling: "none",
+                zoomControl: false,
+                styles: [
+                    {
+                        "featureType": "all",
+                        "elementType": "labels",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "saturation": 36
+                            },
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 40
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            },
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 20
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 17
+                            },
+                            {
+                                "weight": 1.2
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.country",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#e5c163"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.locality",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#c4c4c4"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.neighborhood",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#e5c163"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 20
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 21
+                            },
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.business",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#e5c163"
+                            },
+                            {
+                                "lightness": "0"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "color": "#e5c163"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 18
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#575757"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "color": "#2c2c2c"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#999999"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 19
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 17
+                            }
+                        ]
+                    }
+                ]
 
             }
 
 
 
+            map = new google.maps.Map(document.getElementById("map"), options);
 
+            const image =
+                "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+            var marker = new google.maps.Marker({
+                position: { lat: 56.740, lng: 15.892 },
+                map: map,
+                icon: image,
+
+            });
+
+        }
+
+
+
+
+    </script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtPnzwj5Cff1WvC6k7AKMJFyGnhMDi4Q4&callback=initMap&libraries=&v=weekly">
         </script>
 
-        <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtPnzwj5Cff1WvC6k7AKMJFyGnhMDi4Q4&callback=initMap&libraries=&v=weekly">
-        </script>
-
-        <!--Include other homepage content and images-->
-    </body>
-    <br>
-    <footer>
-        <a href="https://www.facebook.com/bondnybro/" class="fa fa-facebook"></a>
-		<a href="https://twitter.com/007museum?lang=en" class="fa fa-twitter"></a>
-		<a href="https://www.instagram.com/jamesbondmuseum/" class="fa fa-instagram"></a>
-	</footer>
+    <!--Include other homepage content and images-->
+</body>
+<br>
+<footer>
+    <a href="https://www.facebook.com/bondnybro/" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/007museum?lang=en" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/jamesbondmuseum/" class="fa fa-instagram"></a>
+</footer>
 
 </html>
