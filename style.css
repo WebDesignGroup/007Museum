@@ -10,33 +10,22 @@
     justify-content: center;
     position:relative;
   }
-
 h1, h2, h3{
     color: white;
-    text-align: center;
-
 }
-
 .card {
     background-color: #1A1A1A;
     padding: 20px;
     margin-top: 10px;
+    color: white;
 }
-
-  
-
-
 p {
     font-size: 15px;
     font-family: 'Playfair Display', serif;
     color: #f1f1f1;
-    text-align: center;
     justify-content: center;
     margin: 20px;
-    
 }
-  
-
 nav{
     display: block;
     overflow: hidden;
@@ -46,7 +35,6 @@ nav{
     align-items: center;
     min-height: 8vh;
     background-color: #000000;
-
 
 }
 
