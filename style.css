@@ -50,6 +50,7 @@ nav a:hover, a:active{
 }
 
 
+
 body{
     font-family: Arial;
     padding: 10px;
@@ -156,17 +157,21 @@ footer{
     font-size: 22px;
 }
 .productcard button {
-    background-color: #861d1d; 
+    background-color: #e5c163; 
       border: none;
-      color: white;
-      padding: 20px;
+      color: rgb(88, 86, 86);
+      padding: 10px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
       margin: 4px 2px;
       cursor: pointer;
+      width: 50%;
 }
+.productcard button:hover {
+    opacity: 0.7;
+  }
 @media (max-width: 800px) {
     .column {
         flex: 50%;
@@ -189,4 +194,7 @@ footer{
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
+}
+a:hover{
+    color: #e5c163;
 }

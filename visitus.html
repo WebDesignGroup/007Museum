@@ -9,6 +9,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+        .leftcard {   
+            float: left;
+            width: 70%;
+            background-color: #1A1A1A;
+            padding: 10px;
+            
+        }
+        .rightcard {
+            float: right;
+            width: 28%;
+            padding: 10px;
+            background-color: #1A1A1A;
+        }
         .card {
             text-align: left;
             align-items: center;
@@ -17,10 +30,18 @@
         h3,
         p {
             text-align: left;
+            justify-content: center;
         }
 
-        p {
-            padding: 10px;
+        a:link{
+            color:white;
+        }
+        
+        a:visited{
+            color:white;
+        }
+        a:hover{
+            color: #e5c163;
         }
     </style>
 </head>
@@ -43,7 +64,7 @@
         <div class="animation start-home"> </div>
     </nav>
 
-    <div class="card">
+    <div class="rightcard">
         <h3>Opening Hours</h3>
         <p>
             Monday-Friday: 9am - 6pm
@@ -57,11 +78,12 @@
         <p>Pre-order of tickets a must until June 1st, please book your time.
             The exhibition is recommended for all ages. We also take cash in place at the exhibition where you can pay
             by debit card or swish.
-            Tickets can be bought through our online shop.
+            Tickets can be bought through our <a href="store.html">online shop</a>.
         </p>
         <br>
-        <h3>Contact Information</h3>
+        
         <div id="conatct">
+            <h3>Contact Information</h3>
             <p>
                 <strong>Email</strong>: 007museum@telia.com
                 <br>
@@ -69,13 +91,16 @@
             </p>
         </div>
     </div>
-    <div class="card">
+    <div class="leftcard">
         <div id="location">
-            <strong>Address</strong>: Emmabodavägen 20, 382 45 Nybro, Sweden
+            <h3>Location</h3>
+            <p>
+                <strong>Address</strong>: Emmabodavägen 20, 382 45 Nybro, Sweden
+            </p>
+            <div id="map"></div>
         </div>
     </div>
 
-    <div id="map"></div>
     <script>
         document.getElementById("date").style.color = "black";
         document.getElementById("date").style.fontFamily = "Helvetica";
