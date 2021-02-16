@@ -15,6 +15,7 @@
             background-color: #1A1A1A;
             padding: 10px;
 
+
         }
 
         .rightcard {
@@ -24,9 +25,12 @@
             background-color: #1A1A1A;
         }
 
+
+
         .card {
             text-align: left;
             align-items: center;
+            height: fit-content;
         }
 
         h3,
@@ -46,12 +50,21 @@
         a:hover {
             color: #e5c163;
         }
+
+
+        #map {
+            height: 375%;
+        }
     </style>
 </head>
 
 <header>
     <div class="logo">
-        <h1> 007 MUSEUM </h1>
+        <img src="Images/bond_folder_2019.jpg" width="60%">
+        <div class="title">
+            <h1>Museum</h1>
+        </div>
+
     </div>
 </header>
 
@@ -67,6 +80,10 @@
         <div class="animation start-home"> </div>
     </nav>
 
+
+    <br>
+    <br>
+    <br>
     <div class="rightcard">
         <h3>Opening Hours</h3>
         <p>
@@ -85,7 +102,7 @@
         </p>
         <br>
 
-        <div id="conatct">
+        <div id="contact">
             <h3>Contact Information</h3>
             <p>
                 <strong>Email</strong>: 007museum@telia.com
@@ -100,6 +117,7 @@
             <p>
                 <strong>Address</strong>: Emmabodavägen 20, 382 45 Nybro, Sweden
             </p>
+
             <div id="map"></div>
         </div>
     </div>
@@ -110,6 +128,7 @@
         document.getElementById("date").style.fontSize = "12px";
         function initMap() {
             var options = {
+
                 center: { lat: 56.740, lng: 15.892 },
                 zoom: 13,
                 gestureHandling: "none",
