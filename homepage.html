@@ -6,6 +6,13 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+	<script type="text/javascript">
+		window.addEventListener("scroll", function () {
+			var header = document.querySelector("header");
+			header.classList.toggle("sticky", window.scrollY > 40);
+		})
+	</script>
 	<style>
 		/* creates circle effect */
 		.avatar {
@@ -13,12 +20,17 @@
 			border-radius: 50%;
 			width: 30%;
 		}
+
 		/* main homepage column */
 		.column100 {
 			width: 100%;
 		}
+
 		/* headings and para */
-		h1, h2, h3, p {
+		h1,
+		h2,
+		h3,
+		p {
 			text-align: center;
 		}
 
@@ -38,6 +50,7 @@
 			border-left: 1px solid black;
 			margin: 5px;
 		}
+
 		/* logo image, red circle */
 		.logo2 {
 			justify-content: center;
@@ -54,25 +67,40 @@
 
 <header>
 	<div class="logo">
-		<img src="Images/bond_folder_2019.jpg" width="60%">
+		<img src="Images/bond_folder_2019.png" width="60%">
 		<div class="title">
 			<h1>Museum</h1>
 		</div>
 	</div>
+
+	<!--NAVIGATION-->
+	<nav>
+		<ul class="nav-links">
+			<li><a href="homepage.html"><span>|</span> Home <span>|</span></a></li>
+			<li><a href="gallery.html"><span>|</span> Gallery <span>|</span></a></li>
+			<li><a href="videos.html"><span>|</span> Videos <span>|</span></a></li>
+			<li><a href="store.html"><span>|</span> Store <span>|</span></a></li>
+			<li><a href="visitus.html"><span>|</span> Visit <span>|</span></a></li>
+		</ul>
+	</nav>
+
+
+
 </header>
 
 <body>
-	<!--NAVIGATION-->
-	<ul class="nav-links">
-		<li><a href="homepage.html"><span>|</span> Home <span>|</span></a></li>
-		<li><a href="gallery.html"><span>|</span> Gallery <span>|</span></a></li>
-		<li><a href="videos.html"><span>|</span> Videos <span>|</span></a></li>
-		<li><a href="store.html"><span>|</span> Store <span>|</span></a></li>
-		<li><a href="visitus.html"><span>|</span> Visit <span>|</span></a></li>
-	</ul>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
 	<div class="animation start-home"></div>
 	<!--MAIN IMAGE-->
-	<img src="https://img.cinemablend.com/filter:scale/quill/3/b/c/0/1/5/3bc0155961e8ac4c235dd42a6983306bc3e847e8.jpg?fw=1200" width="100%">
+	<img src="https://img.cinemablend.com/filter:scale/quill/3/b/c/0/1/5/3bc0155961e8ac4c235dd42a6983306bc3e847e8.jpg?fw=1200"
+		width="100%">
 	<br>
 	<h1>WELCOME TO OUR MUSEUM</h1>
 
