@@ -200,6 +200,8 @@ nav a:hover, a:active{
     transition: 0.2;
 }
 
+
+
 header{
     background-color: black;
     display: flexbox;
@@ -265,6 +267,7 @@ span{
     color: #e5c163;
     font-weight: Bolder;
     font-size: 20;
+    
 }
 /* map on visitus */
 #map {
@@ -318,3 +321,10 @@ footer{
 a:hover{
     color: #e5c163;
 }
+
+/* Add an active class to highlight the current page */
+a.active {
+    background-color: goldenrod;
+    color: black;
+  }
+
