@@ -252,11 +252,12 @@ header.sticky  ul li a{
 
 /*burger bar for further responsivity*/
 nav .icon-burger {
+    position: absolute;
 	display: none;
-	position: absolute;
 	right: 5%;
-	top: 50%;
-	transform: translateY(-50%);
+    transform: translateY(-55%);
+	top: 55%;
+	
 }
 nav .icon-burger .line {
 	width: 30px;
@@ -272,23 +273,26 @@ nav .icon-burger .line {
 
 	nav .nav-links {
 		float: none;
+        justify-content: space-evenly;
 		position: fixed;
+        overflow: hidden;
 		z-index: 9;
 		left: 0;
 		right: 0;
 		top: 100px;
+        box-sizing: border-box;
 		bottom: 100%;
+        flex-direction: column;
 		width: auto;
 		height: auto;
-		flex-direction: column;
-		justify-content: space-evenly;
+        transition: all .75s ease-in-out;
 		background-color: rgba(0,0,0,.8);
-		overflow: hidden;
-		box-sizing: border-box;
-		transition: all .5s ease-in-out;
+		
+		
+		
 	}
 	nav .nav-links a {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	nav :checked ~ .nav-links {
 		bottom: 0;
@@ -296,15 +300,20 @@ nav .icon-burger .line {
 	nav .icon-burger {
 		display: block;
 	}
-	nav :checked ~ .icon-burger .line:nth-child(1) {
-		transform: translateY(10px) rotate(225deg);
-	}
-	nav :checked ~ .icon-burger .line:nth-child(3) {
-		transform: translateY(-10px) rotate(-225deg);
-	}
-	nav :checked ~ .icon-burger .line:nth-child(2) {
+
+    /* animation of burger box when clicked */
+
+    nav :checked ~ .icon-burger .line:nth-child(2) {
 		opacity: 0;
 	}
+
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(220deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-220deg);
+	}
+	
 	
 }
 
@@ -334,7 +343,7 @@ span{
 }
 /* map on visitus */
 #map {
-    height: 30%;
+    height: 50%;
     position: relative;
     justify-content: space-around;
     width: 100%;
