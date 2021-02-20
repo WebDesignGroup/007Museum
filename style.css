@@ -180,11 +180,20 @@ body{
 .productcard button:hover {
     opacity: 0.7;
   }
+  /* map on visitus */
+#map {
+    height: 50%;
+    position: fixed;
+    justify-content: space-around;
+    width: 100%;
+    overflow: scroll;
+}
 /* navigation */
 nav{
     min-height: 3vh;
     background-color: #000000; 
 }
+
 
 
 
@@ -341,13 +350,7 @@ span{
     font-size: 20;
     
 }
-/* map on visitus */
-#map {
-    height: 50%;
-    position: relative;
-    justify-content: space-around;
-    width: 100%;
-}
+
 /* footer + content */
 footer{
     display: flex;
