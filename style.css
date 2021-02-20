@@ -200,12 +200,12 @@ nav{
 
 nav a:hover, a:active{
     text-align: center;
-    height: 90%;
+    height: 50%;
     z-index: 0;
     background: #4d4b4b;
     width: 100%;
     border-radius: 6px;
-    padding-top: 10%;
+    padding-top: 0%;
     transition: 0.2;
 }
 
@@ -255,11 +255,8 @@ header.sticky  ul li a{
     color: #ffffff;
     background-color: rgb(0, 0, 0);
     height: 50;
-<<<<<<< HEAD
    
-=======
     justify-content:center;
->>>>>>> 09b047737a716f80a2fcc133a080c9037a7431a4
 }
 
 /*burger bar for further responsivity*/
