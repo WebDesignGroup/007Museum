@@ -182,7 +182,7 @@ body{
   }
   /* map on visitus */
 #map {
-    height: 50%;
+    height: 300%;
     position: fixed;
     justify-content: space-around;
     width: 100%;
@@ -216,7 +216,7 @@ header{
     display: flexbox;
     position: fixed;
     width: 100%;
-  
+    z-index: 9999;
 
 }
 
@@ -257,6 +257,7 @@ header.sticky  ul li a{
     color: #ffffff;
     background-color: rgb(0, 0, 0);
     height: 50;
+   
 }
 
 /*burger bar for further responsivity*/
