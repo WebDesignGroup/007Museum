@@ -327,6 +327,25 @@ nav .icon-burger .line {
 }
 
 
+/* reduces the size of the nav link text when the screen size is 1000px - stops the spans from pushing above and below the link */
+@media screen and (max-width: 1000px) {
+
+	nav .nav-links a {
+		font-size: 17px;
+	}
+}
+
+/* reduces the size of the nav link text when the screen size is 930px - stops the spans from pushing above and below the link */
+@media screen and (max-width: 930px) {
+
+	nav .nav-links a {
+		font-size: 13px;
+	}
+}
+
+
+
+
 
 .nav-links a{
     color: #ffffff;
