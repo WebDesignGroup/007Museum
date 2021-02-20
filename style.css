@@ -182,7 +182,7 @@ body{
   }
   /* map on visitus */
 #map {
-    height: 300%;
+    height: 70%;
     position: fixed;
     justify-content: space-around;
     width: 100%;
