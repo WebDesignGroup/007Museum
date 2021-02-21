@@ -417,39 +417,54 @@ footer{
 
 
 .thecard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     transform-style: preserve-3d;
     transition: all 0.5s ease;   
 }
 
 .thefront{
-
+    display: flex;
+    overflow: hidden;
     backface-visibility: hidden;
+    justify-content: space-around;
     
 
 }
 
 
-.theback {
-    display:flexbox;
-    align-items: center;
-    justify-content: center;
+
+
+
+.theback{
+    padding-top:10%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
     backface-visibility: hidden;
+    position: absolute;
     transform: rotateY(180deg);
     background-color: #1A1A1A;
     color: #ffffff;
   
 }
 
+.backcontent{
 
-.caption{
-    text-align: center;
-    align-items: center;
-   
+    
 }
+
+
 
 .thecard:hover{
+    content: none;
     transform: rotateY(180deg);
 }
+
+
 /* when hovering should turn gold */
 a:hover{
     color: #e5c163;
