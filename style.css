@@ -215,7 +215,6 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 2%;
     color: white;
     width: 100%;
     height: auto;
@@ -234,7 +233,7 @@ body{
     padding:5%;
     flex-direction: column;
     flex:1;
-    width: min-content;
+    width:fit-content;
     height: auto;
     display: flex;
     flex-wrap: wrap;
