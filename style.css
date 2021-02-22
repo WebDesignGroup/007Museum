@@ -188,14 +188,13 @@ body{
     /* font-weight: 900; */
 }
 .row {
-    display: -ms-flexbox; 
     display: flex;
     -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
     padding: 0 4px;
 }
 .column {
-    -ms-flex: 25%; /* IE10 */
+    -ms-flex: 25%; 
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
@@ -326,6 +325,28 @@ nav a:hover, a:active{
    
     justify-content:center;
 }
+.nav-links a{
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20;
+    text-align: center;
+}
+
+.nav-links li{
+    margin-left: 5%;
+    margin-right: 5%;
+    list-style-type: none;
+}
+span{
+    color: #e5c163;
+    font-weight: Bolder;
+    font-size: 20;
+    
+}
 
 /*burger bar for further responsivity*/
 nav .icon-burger {
@@ -352,28 +373,7 @@ nav .icon-burger .line {
 
 
 
-.nav-links a{
-    color: #ffffff;
-    display: inline-block;
-    text-decoration: none;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 20;
-    text-align: center;
-}
 
-.nav-links li{
-    margin-left: 5%;
-    margin-right: 5%;
-    list-style-type: none;
-}
-span{
-    color: #e5c163;
-    font-weight: Bolder;
-    font-size: 20;
-    
-}
 
 /* footer + content */
 footer{
@@ -441,7 +441,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
     transform-style: preserve-3d;
     transition: all 0.5s ease;   
 }
