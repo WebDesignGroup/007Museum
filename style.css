@@ -450,6 +450,7 @@ footer{
 .thefront{
     display: flex;
     overflow: hidden;
+    transform: rotateY(0);
     backface-visibility: hidden;
     justify-content: space-around;
     
@@ -480,11 +481,15 @@ footer{
 
 
 
-.thecard:hover{
+.thecard:hover > .thefront{
     content: none;
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
 }
 
+.thecard:hover > .theBack{
+    content: none;
+    transform: rotateY(0deg);
+}
 
 /* when hovering should turn gold */
 a:hover{
