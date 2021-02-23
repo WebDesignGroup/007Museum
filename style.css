@@ -71,6 +71,7 @@ header{
     position: fixed;
     width: 100%;
     z-index: 9999;
+    border-bottom: 2px solid #e5c163;
 }
 
 .header {
@@ -211,12 +212,16 @@ body{
 
 .productcard {
     max-width: 300px;
-    margin: auto;
+    align-items: center;
+    margin: 1%;
     text-align: center;
     font-size: 12px;
+    justify-content: center;
+    border: 5px solid gray;
     background-color: #1A1A1A;
     border-radius: 3%;
 }
+
 
 .price {
     color: rgb(255, 255, 255);
