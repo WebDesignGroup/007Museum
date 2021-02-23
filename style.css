@@ -471,7 +471,7 @@ footer{
     align-items: center;
 
 }
-  
+/*card in gallery */
 .thecard{
     display: flex;
     align-items: center;
@@ -501,17 +501,12 @@ footer{
     color: #ffffff;
 }
 
-.backcontent{
-
-    
-}
-
 .thecard:hover > .thefront{
     content: none;
     transform: rotateY(-180deg);
 }
 
-.thecard:hover > .theBack{
+.thecard:hover > .theback{
     content: none;
     transform: rotateY(0deg);
 }
