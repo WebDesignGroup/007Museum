@@ -109,6 +109,14 @@
 	nav .nav-links a {
 		font-size: 17px;
 	}
+
+
+
+.thecard:hover > .theBack{
+    content: none;
+    font-size: 14px;
+    transform: rotateY(0deg);
+}
 }
 
 /* reduces the size of the nav link text when the screen size is 930px - stops the spans from pushing above and below the link */
@@ -117,6 +125,14 @@
 	nav .nav-links a {
 		font-size: 13px;
 	}
+
+
+    
+    .thecard:hover > .theBack{
+        content: none;
+        font-size: 11px;
+        transform: rotateY(0deg);
+    }
 }
 /* header + content */
 header{
