@@ -468,6 +468,7 @@ footer{
 }
 
 .videoSection{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -529,14 +530,10 @@ a.active {
 
   .video{
       position: relative;
-      padding-bottom: 56.25%;
-      margin-bottom: 20px;
+      padding-bottom: 2%;
+      margin-bottom: 10px;
   }
-  .video iframe{
-      position: absolute;
-      width: 75%;
-      height: 75%;
-  }
+  
 
    
 
