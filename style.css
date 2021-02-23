@@ -34,7 +34,7 @@
   
 
 /* reduces the size of the nav link text when the screen size is 1000px - stops the spans from pushing above and below the link */
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
 
 	nav .nav-links a {
 		font-size: 17px;
@@ -47,10 +47,10 @@
     font-size: 14px;
     transform: rotateY(0deg);
 }
-}
+} */
 
 /* reduces the size of the nav link text when the screen size is 930px - stops the spans from pushing above and below the link */
-@media screen and (max-width: 930px) {
+/* @media screen and (max-width: 930px) {
 
 	nav .nav-links a {
 		font-size: 13px;
@@ -63,7 +63,7 @@
         font-size: 11px;
         transform: rotateY(0deg);
     }
-}
+} */
 /* header + content */
 header{
     background-color: black;
@@ -326,8 +326,8 @@ nav .icon-burger .line {
 	transition: all .3s ease-in-out;
 }
 
-/* activates burger bar when screen width is at 768 pixels */
-@media screen and (max-width: 768px) {
+/* activates burger bar when screen width is at 1000 pixels */
+@media screen and (max-width: 1000px) {
 
 	nav .nav-links {
 		display: flex;
