@@ -13,57 +13,107 @@
 
 @media screen and (max-width: 800px) {
     .column {
+      -ms-flex: 50%;
       flex: 50%;
       max-width: 50%;
-    }
-    .productcard{
-        flex: 50%;
-        max-width: 50%;
     }
 }
 @media screen and (max-width: 600px) {
     .column {
+      -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
     }
-    .productcard{
-        flex: 100%;
-        max-width: 100%;
+  }
+
+/* activates burger bar when screen width is at 768 pixels */
+@media screen and (max-width: 768px) {
+
+	nav .nav-links {
+		display: flex;
+        justify-content: space-evenly;
+		position: fixed;
+        overflow: hidden;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+        box-sizing: border-box;
+		bottom: 100%;
+        flex-direction: column;
+		width: auto;
+		height: auto;
+        transition: all .75s ease-in-out;
+		background-color: rgba(0,0,0,.8);
+		
+		
+		
+	}
+	nav .nav-links a {
+        text-align: center;
+        width: 40%;
+        margin-left: 30%;
+		font-size: 18px;
+	}
+
+    a.active {
+        background-color: rgb(218, 185, 102);
+        color: black;
+        height: 200%;
+        margin-left: 30%;
+        border-radius: 6px;
+      }
+
+    nav a:hover, a:active{
+        text-align: center;
+        height: 200%;
+        z-index: 0;
+        background: #4d4b4b;
+        width: 40%;
+        padding-top: 0%;
+        border-radius: 6px;
+        transition: 0.2;
     }
+
+	nav :checked ~ .nav-links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+
+    /* animation of burger box when clicked */
+
+    nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(220deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-220deg);
+	}
+	
+	
 }
-  
+
 
 /* reduces the size of the nav link text when the screen size is 1000px - stops the spans from pushing above and below the link */
-/* @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 
 	nav .nav-links a {
 		font-size: 17px;
 	}
-
-
-
-.thecard:hover > .theBack{
-    content: none;
-    font-size: 14px;
-    transform: rotateY(0deg);
 }
-} */
 
 /* reduces the size of the nav link text when the screen size is 930px - stops the spans from pushing above and below the link */
-/* @media screen and (max-width: 930px) {
+@media screen and (max-width: 930px) {
 
 	nav .nav-links a {
 		font-size: 13px;
 	}
-
-
-    
-    .thecard:hover > .theBack{
-        content: none;
-        font-size: 11px;
-        transform: rotateY(0deg);
-    }
-} */
+}
 /* header + content */
 header{
     background-color: black;
@@ -71,7 +121,6 @@ header{
     position: fixed;
     width: 100%;
     z-index: 9999;
-    border-bottom: 2px solid #e5c163;
 }
 
 .header {
@@ -102,9 +151,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-
 /* headings, body and paragraphs */
-
 h1{
     text-align: center;
     font-size: 45px;
@@ -114,7 +161,6 @@ h1, h2, h3, p{
     color: white;
     font-family: quantum;
 }
-
 p {
     font-size: 15px;
     justify-content: center;
@@ -131,10 +177,10 @@ body{
     min-height: 8vh;
     background-color: #000000;
 }
-
 .column100 {
     font-family: quantum;
     padding-top: 2%;
+   
 }
 
 .column100 p{
@@ -144,20 +190,15 @@ body{
 }
 .row {
     display: flex;
+    -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
     padding: 0 4px;
 }
 .column {
+    -ms-flex: 25%; 
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
-  }
-
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-    align-self: center;
   }
 /* cards, info on cards + internal cointainers */
 .card {
@@ -212,16 +253,12 @@ body{
 
 .productcard {
     max-width: 300px;
-    align-items: center;
-    margin: 1%;
+    margin: auto;
     text-align: center;
     font-size: 12px;
-    justify-content: center;
-    border: 5px solid gray;
     background-color: #1A1A1A;
     border-radius: 3%;
 }
-
 
 .price {
     color: rgb(255, 255, 255);
@@ -244,10 +281,8 @@ body{
 
 .productcard button:hover {
     opacity: 0.7;
-}
-
-/* map on visitus */
-
+  }
+  /* map on visitus */
 #map {
     height: 70%;
     position: fixed;
@@ -272,6 +307,9 @@ nav a:hover, a:active{
     transition: 0.2;
 }
 
+
+
+
 #nav-toggle{
     position: absolute;
     top: -100px
@@ -288,7 +326,6 @@ nav a:hover, a:active{
    
     justify-content:center;
 }
-
 .nav-links a{
     color: #ffffff;
     display: inline-block;
@@ -305,11 +342,11 @@ nav a:hover, a:active{
     margin-right: 5%;
     list-style-type: none;
 }
-
 span{
     color: #e5c163;
     font-weight: Bolder;
     font-size: 20;
+    
 }
 
 /*burger bar for further responsivity*/
@@ -321,7 +358,6 @@ nav .icon-burger {
 	top: 55%;
 	
 }
-
 nav .icon-burger .line {
 	width: 30px;
 	height: 5px;
@@ -331,75 +367,14 @@ nav .icon-burger .line {
 	transition: all .3s ease-in-out;
 }
 
-/* activates burger bar when screen width is at 1000 pixels */
-@media screen and (max-width: 1000px) {
 
-	nav .nav-links {
-		display: flex;
-        justify-content: space-evenly;
-		position: fixed;
-        overflow: hidden;
-		z-index: 9;
-		left: 0;
-		right: 0;
-		top: 100px;
-        box-sizing: border-box;
-		bottom: 100%;
-        flex-direction: column;
-		width: auto;
-		height: auto;
-        transition: all .75s ease-in-out;
-		background-color: rgba(0,0,0,.8);
-	}
 
-	nav .nav-links a {
-        text-align: center;
-        width: 40%;
-        margin-left: 30%;
-		font-size: 18px;
-	}
 
-    a.active {
-        background-color: rgb(218, 185, 102);
-        color: black;
-        height: 200%;
-        margin-left: 30%;
-        border-radius: 6px;
-    }
 
-    nav a:hover, a:active{
-        text-align: center;
-        height: 200%;
-        z-index: 0;
-        background: #4d4b4b;
-        width: 40%;
-        padding-top: 0%;
-        border-radius: 6px;
-        transition: 0.2;
-    }
 
-	nav :checked ~ .nav-links {
-		bottom: 0;
-	}
 
-	nav .icon-burger {
-		display: block;
-	}
 
-    /* animation of burger box when clicked */
 
-    nav :checked ~ .icon-burger .line:nth-child(2) {
-		opacity: 0;
-	}
-
-	nav :checked ~ .icon-burger .line:nth-child(1) {
-		transform: translateY(10px) rotate(220deg);
-	}
-
-	nav :checked ~ .icon-burger .line:nth-child(3) {
-		transform: translateY(-10px) rotate(-220deg);
-	}
-}
 
 /* footer + content */
 footer{
@@ -449,31 +424,22 @@ footer{
 .fa:hover {
     opacity: 0.7;
 }
-
 /* video section */
-
 .iframe-container{
     position: relative;
     width: 100%;
     padding-bottom: 56.25%; 
     height: 0;
-}
-
-.iframe-container iframe{
+  }
+  .iframe-container iframe{
     position: absolute;
     top:0;
     left: 0;
     width: 100%;
     height: 100%;
-}
+  }
 
-.videoSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-}
-/*card in gallery */
 .thecard{
     display: flex;
     align-items: center;
@@ -488,12 +454,17 @@ footer{
     transform: rotateY(0);
     backface-visibility: hidden;
     justify-content: space-around;
+    
+
 }
+
+
+
+
 
 .theback{
     padding-top:10%;
     width: 100%;
-    height: auto;
     text-align: center;
     flex-direction: column;
     backface-visibility: hidden;
@@ -505,12 +476,14 @@ footer{
 }
 
 
+
+
 .thecard:hover > .thefront{
     content: none;
     transform: rotateY(-180deg);
 }
 
-.thecard:hover > .theback{
+.thecard:hover > .theBack{
     content: none;
     transform: rotateY(0deg);
 }
@@ -525,7 +498,7 @@ a.active {
     background-color: rgb(218, 185, 102);
     color: black;
     border-radius: 6px;
-}
+  }
 
   .video{
       position: relative;
